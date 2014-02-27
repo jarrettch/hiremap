@@ -10,4 +10,8 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap
  */
+
+ html, #map-canvas { height: 100%; }
+ body { height: 100%; padding-top: 50px; }
