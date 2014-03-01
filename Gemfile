@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Official Sass port of Bootstrap http://getbootstrap.com/css/#sass
 gem 'bootstrap-sass', '~> 3.1.1'
 
+# Angellist Gem
+gem 'angellist_api'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -40,6 +43,7 @@ gem 'pry'
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'dotenv-rails'
 end
 
 group :test do

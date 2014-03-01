@@ -3,5 +3,5 @@ class Startup < ActiveRecord::Base
   validates :angellist_url, presence: true
 
   scope     :hiring,        -> { where('jobs_count > 0') }
-  scope     :within_bounds, -> (location) { binding.pry }
+  scope     :within_bounds, -> (location) { all }
 end

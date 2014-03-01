@@ -26,6 +26,11 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
+    angellist_api (1.0.7)
+      faraday (~> 0.7)
+      faraday_middleware (~> 0.7)
+      hashie (>= 1.1.0)
+      multi_json (~> 1.0)
     arel (4.0.2)
     atomic (1.1.14)
     bootstrap-sass (3.1.1.0)
@@ -47,6 +52,9 @@ GEM
     coffee-script-source (1.7.0)
     database_cleaner (1.2.0)
     diff-lcs (1.2.5)
+    dotenv (0.10.0)
+    dotenv-rails (0.10.0)
+      dotenv (= 0.10.0)
     erubis (2.7.0)
     execjs (2.0.2)
     factory_girl (4.2.0)
@@ -56,6 +64,11 @@ GEM
       railties (>= 3.0.0)
     faker (1.2.0)
       i18n (~> 0.5)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -75,6 +88,7 @@ GEM
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.4)
+    multipart-post (1.2.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     polyglot (0.3.3)
@@ -151,10 +165,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angellist_api
   bootstrap-sass (~> 3.1.1)
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
+  dotenv-rails
   factory_girl_rails
   faker
   jbuilder (~> 1.2)
